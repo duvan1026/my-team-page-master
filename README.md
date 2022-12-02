@@ -73,3 +73,8 @@ This application/site was created as a submission to a [DevChallenges](https://d
 - Website [your-website.com](https://{your-web-site-link})
 - GitHub [@your-username](https://{github.com/your-usermame})
 - Twitter [@your-twitter](https://{twitter.com/your-username})
+
+
+## Implementación
+
+[link](https://www.youtube.com/watch?v=Zs1pofC6PQk) ayuda para la implementación, quedamos en minuto 9:16
