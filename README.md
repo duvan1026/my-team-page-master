@@ -77,4 +77,4 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Implementación
 
-[link](https://www.youtube.com/watch?v=Zs1pofC6PQk) ayuda para la implementación, quedamos en minuto 9:16
+[link](https://www.youtube.com/watch?v=Zs1pofC6PQk) ayuda para la implementación, quedamos en minuto 25:32
