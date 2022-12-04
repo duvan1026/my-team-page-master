@@ -1,8 +1,105 @@
 @import url('href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Poppins:wght@400;600&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     font-family: 'Inconsolata', monospace;
     font-family: 'Space Mono', monospace;
+}
+
+.header h1{
+    font-family: 'PT Serif', serif;
+    letter-spacing: -0.045em;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.who-we-are {
+    width: 45%;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.who-we-are h2{
+    font-family: 'Poppins', sans-serif;
+    /* font-weight: 600; */
+    text-transform: uppercase;
+    line-height: 27px;
+    font-size: 1em;
+}
+
+.who-we-are p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.bodyContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*//Divide el estapacio en columnas */
+    gap: 2rem;
+    margin: 4rem 10rem;
+
+}
+
+.bodyContainer .member{
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 4rem;
+    cursor: pointer;
+    position: relative;
+}
+
+/* nth-child(3n + 2) Representa y selecciona los elemntos 2 y 5 de las  fotografias */
+.member:nth-child(3n + 2){
+    margin-bottom: 0;
+    margin-top: 5rem;
+}
+.member img{
+    width: 100%;
+}
+
+/* ::after crea un pseudo-elemento que es el último hijo del elemento seleccionado.  
+*  Se implementa para dar estilo y giro al rol de cada integrante del equipo. */
+.member:first-child:after{
+    content: 'PRODUCT OWNER';
+    padding-bottom: 1rem;
+}
+.member:nth-child(2)::after{
+    content: 'ART DIRECTOR';
+}
+.member:nth-child(3)::after{
+    content: 'TECH LEAD';
+}
+.member:nth-child(4)::after{
+    content: 'UX DESIGNER';
+}
+.member:nth-child(5)::after,.member:nth-child(6)::after{
+    content: 'DEVELOPER';
+}
+
+.member::after{
+    color: black;
+    font-family: 'PT Serif', serif;
+    position: absolute;
+    right: -5rem;
+    top: 3rem;
+    transform: rotate(90deg);
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    color: #a9a9a9;
+}
+.footer a {
+    color: #555;
 }
