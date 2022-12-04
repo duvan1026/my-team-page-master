@@ -17,5 +17,36 @@
     justify-content: space-around;
     align-items: center;
     padding: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.who-we-are {
+    width: 40%;
+}
+
+.bodyContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*//Divide el estapacio en columnas */
+    gap: 2rem;
+    margin: 4rem 10rem;
 
 }
+
+.bodyContainer .member{
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 4rem;
+    cursor: pointer;
+    position: relative;
+}
+
+/* nth-child(3n + 2) Representa y selecciona los elemntos 2 y 5 de las  fotografias */
+.member:nth-child(3n + 2){
+    margin-bottom: 0;
+    margin-top: 5rem;
+}
+.member img{
+    width: 100%;
+}
+
